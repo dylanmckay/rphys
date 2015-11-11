@@ -22,5 +22,9 @@ class RigidBody
     #distance = (@center - sphere.center).length
     #distance <= @radius + @sphere.radius
   end
+
+  def momentum
+    @mass*@velocity
+  end
 end
 

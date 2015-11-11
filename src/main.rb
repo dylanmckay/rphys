@@ -8,7 +8,7 @@ require_relative 'rigidbody'
 require_relative 'world'
 
 SIMULATION_STEP = 0.1
-SIMULATION_TIME = 1
+SIMULATION_TIME = 200
 
 
 broadphase = NaiveBroadphase.new

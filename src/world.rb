@@ -27,7 +27,14 @@ class World
   private
 
   def handle_collision(delta, pairs)
+    pairs.each do |pair|
+      collide_pair(delta, pair.obj1, pair.obj2)
+    end
     
+  end
+
+  def collide_pair(delta, obj1, obj2)
+    fail
   end
 
   # finds the pairs of objects that definitely are colliding
